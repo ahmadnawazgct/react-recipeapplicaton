@@ -12,9 +12,10 @@ export default class Recipes extends Component{
         search:""
     }
     hangelChange=e=>{
+        console.log("change called");
         this.setState({
-            search:e.target.value
-        })
+        search: e.target.value
+        });
     }
     handleSumbit=e=>{
         e.preventDefault();
@@ -23,7 +24,7 @@ export default class Recipes extends Component{
         return(
             <>
                 <Search  
-                    recipes={this.state.search}
+                    search={this.state.search}
                     handleChange={this.hangelChange}
                     handleSumbit={this.handleSumbit}
                 />
