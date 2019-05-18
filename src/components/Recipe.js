@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 
 export default class Recipe extends Component{
     render(){
-        console.log(this.props);
         const { image_url, publisher, recipe_id, source_url, title } = this.props.recipe;
         return (
             <div className="col-10 mx-auto col-md-6 col-lg-4 my-4">

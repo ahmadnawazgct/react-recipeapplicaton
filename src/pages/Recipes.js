@@ -50,6 +50,7 @@ export default class Recipes extends Component {
                 });
                 };
                 handleSumbit = e => {
+                  console.log('handle submit called');
                 e.preventDefault();
                 const { base_url, query, search } = this.state;
                 this.setState({
